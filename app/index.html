@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>first app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="drag"></div>
+    <div class="materialContainer">
+        <div class="box">
+     
+           <div class="title">LOGIN</div>
+     
+           <div class="input">
+              <label for="name">Username</label>
+              <input type="text" name="name" id="name">
+              <span class="spin"></span>
+           </div>
+     
+           <div class="input">
+              <label for="pass">Password</label>
+              <input type="password" name="pass" id="pass">
+              <span class="spin"></span>
+           </div>
+     
+           <div class="button login">
+              <button><span>GO</span> <i class="fa fa-check"></i></button>
+           </div>
+     
+        </div>
+     
+        <div class="overbox">
+           <div class="material-button alt-2"><span class="shape"></span></div>
+     
+           <div class="title">REGISTER</div>
+     
+           <div class="input">
+              <label for="regname">Email</label>
+              <input type="text" name="regname" id="regname">
+              <span class="spin"></span>
+           </div>
+     
+           <div class="input">
+              <label for="regpass">Password</label>
+              <input type="password" name="regpass" id="regpass">
+              <span class="spin"></span>
+           </div>
+     
+           <div class="input">
+              <label for="reregpass">Repeat Password</label>
+              <input type="password" name="reregpass" id="reregpass">
+              <span class="spin"></span>
+           </div>
+     
+           <div class="button">
+              <button><span>SignUp</span></button>
+           </div>
+     
+     
+        </div>
+     
+     </div>
+     <div id="exit"><a>Exit</a></div>
+    
+
+  </body>
+  <script>
+    require('./renderer.js');
+  </script>
+  <script>
+    window.$ = window.jQuery = require(".././node_modules/jquery/dist/jquery.min.js")
+  </script>
+  <script src="app.js"></script>
+</html>
