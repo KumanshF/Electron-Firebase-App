@@ -1,0 +1,31 @@
+<div [hidden]="!canSee" class="carouselWrapper" style="background-image: url('assets/img/background.svg')">
+  <mdb-carousel  [interval]="0" [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+    <mdb-carousel-item class="view waves-light" mdbWavesEffect>
+        <div class="carousel-caption animated fadeInDown">
+            <h1 class="title">Loop</h1>
+            <p>A cloud-based instant messaging app</p>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item class="view waves-light" mdbWavesEffect>
+        <div class="carousel-caption animated fadeInDown">
+            <h3 class="title">It is Cross-Platform</h3>
+            <p class="para">Messages synced across Web, macOS, PC, and Linux</p>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item class=" view waves-light" mdbWavesEffect>
+        <div class="carousel-caption animated fadeInDown">
+            <h3 class="title">Send and Store</h3>
+            <p class="para">documents of any type</p>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item class=" view waves-light" mdbWavesEffect>
+        <div class="carousel-caption animated fadeInDown">
+           <div class="authBtns">
+                <h1>Loop</h1>
+                <button mdbBtn type="button" color="primary" class="btn waves-light" mdbWavesEffect (click)="toLogIn()">Log In</button>  
+                <button mdbBtn type="button" color="default" class="btn waves-light" mdbWavesEffect (click)="toSignUp()">Sign Up</button>       
+           </div> 
+        </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
+</div>

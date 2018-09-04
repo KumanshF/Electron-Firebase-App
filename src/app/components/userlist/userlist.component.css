@@ -1,0 +1,23 @@
+.navToggle{
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.searchField{
+    width: 200px;
+    display: inline-block;
+    padding-top: 2px;
+}
+.mat-form-field{
+    font-size: 14px;
+}
+.users{
+    height: 525px;
+    background-color: rgb(43, 58, 75);
+
+}
+.header{
+    height: 55px;
+}

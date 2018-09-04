@@ -1,0 +1,29 @@
+<mat-sidenav-container (backdropClick)="closeNav()">
+  <mat-sidenav #sidenav (keydown.escape)="closeNav()" disableClose>
+    <div class="topUserInfo">
+      
+    </div>
+    <p><button mat-button (click)="closeNav()">Toggle</button></p>
+    
+    <button (click)="signOut()"> 
+      Sign Out
+    </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="chatroom" >
+        <div class="userlist">
+          <app-userlist></app-userlist>
+        </div>
+        <div class="feedArea">
+          <app-feed></app-feed>
+        </div>
+    </div>
+  </mat-sidenav-content>
+  
+
+</mat-sidenav-container>
+
+
+
+

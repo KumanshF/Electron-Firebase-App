@@ -1,0 +1,38 @@
+<div class="formContainer">
+  <img class="imglogin" src="assets/img/icon.png">
+  <div class="loginCard">
+    <div class="formHolder">
+      <form name="loginForm" [formGroup]="loginForm" class="my-dark-theme formFields">
+
+        <mat-form-field class="formInputs">
+          <input  matInput placeholder="Email" [(ngModel)]="email" [formControl]="emailFormControl"
+               [errorStateMatcher]="matcher">
+          <mat-error *ngIf="emailFormControl.invalid">
+            {{getEmailErrorMsg()}}
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="formInputs">
+            <input matInput placeholder="Enter your password" [(ngModel)]="password" [type]="hide ? 'password' : 'text'" 
+            [formControl]="passwordFormControl">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="passwordFormControl.invalid">
+              {{getPasswordErrorMsg()}}    
+            </mat-error>
+        </mat-form-field>
+
+        <button mdbBtn [disabled]="loginForm.invalid"
+          type="submit" (click)="logIn()"
+          class="btn waves-light" mdbWavesEffect id="btn-login">
+          Log In
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="navi-btn" (click)="toStartUp()">
+    Back
+  </div>
+
+</div>

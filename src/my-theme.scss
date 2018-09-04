@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+
+
+@import '~@angular/material/theming';
+  $custom-typography: mat-typography-config(
+      $font-family: 'Comfortaa, cursive'
+  );
+@include mat-core($custom-typography);
+
+$my-theme-primary:mat-palette($mat-blue);
+$my-theme-accent: mat-palette($mat-light-blue);
+$my-theme-warn:   mat-palette($mat-red);
+
+$my-theme: mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
+
+@include angular-material-theme($my-theme);
+
+$my-theme-primary:mat-palette($mat-blue);
+$my-theme-accent: mat-palette($mat-light-blue);
+$my-theme-warn:   mat-palette($mat-red);
+
+$my-dark-theme: mat-dark-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
+
+.my-dark-theme {
+    @include angular-material-theme($my-dark-theme);
+  }
+

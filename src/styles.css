@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+     
+}
+body{
+    margin:0px;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #384B5F;
+    font-family: 'Comfortaa', cursive;
+}
+
+.view,
+.carousel,
+.carousel-item,
+.carousel-item.active {
+ height: 100%;
+}
+
+.carousel-inner {
+ height: 100%;
+}
+.carousel-indicators{
+    margin-bottom: 0px;
+}
+
+.carousel-caption{
+    top:40%;
+    right: 20px;
+    text-align: right;
+}
+.carousel-control-prev, .carousel-control-next{
+    top:555px;
+    display: block;
+    width: 80px;
+    z-index: 16;
+}
+.carousel-control-prev{
+    left:280px;
+}
+.carousel-control-next{
+    right:280px;
+}

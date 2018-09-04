@@ -1,0 +1,18 @@
+.mat-drawer-container{
+    height: 100%;
+}
+.chatroom{
+    background-color: #384B5F;
+    height: 100%;
+    display: flex;
+}
+.userlist{
+    width: 300px;
+}
+.feedArea{
+    width: 500px;
+    padding: 10px;
+}
+.topUserInfo{
+    width: 280px;
+}
